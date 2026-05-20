@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src\Demo\Squad.AgentFramework.Demo.csproj" />
+  <Project Path="src\AppHost\Squad.AgentFramework.Demo.AppHost.csproj" />
+</Solution>

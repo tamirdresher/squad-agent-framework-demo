@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <UseRidGraph>true</UseRidGraph>
+    <SelfContained>false</SelfContained>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Azure.AI.OpenAI" Version="13.3.3-preview.1.26264.13" />
+    <PackageReference Include="Aspire.Azure.AI.Inference" Version="13.3.3-preview.1.26264.13" />
+    <PackageReference Include="Azure.AI.OpenAI" Version="2.5.0-beta.1" />
+    <PackageReference Include="Azure.Identity" Version="1.21.0" />
+    <PackageReference Include="GitHub.Copilot.SDK" Version="1.0.0-beta.2" />
+    <PackageReference Include="Microsoft.Agents.AI" Version="1.6.1" />
+    <PackageReference Include="Microsoft.Agents.AI.DurableTask" Version="1.6.1-preview.260514.1" />
+    <PackageReference Include="Microsoft.Agents.AI.GitHub.Copilot" Version="1.6.1-preview.260514.1" />
+    <PackageReference Include="Microsoft.Agents.AI.Workflows" Version="1.6.1" />
+    <PackageReference Include="Microsoft.Agents.AI.Workflows.Generators" Version="1.6.1" />
+    <PackageReference Include="Microsoft.DurableTask.Client.AzureManaged" Version="1.24.2" />
+    <PackageReference Include="Microsoft.DurableTask.Worker.AzureManaged" Version="1.24.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="10.6.0" />
+    <PackageReference Include="OpenAI" Version="2.10.0" />
+    <!-- OpenTelemetry: emit MAF workflow spans to the Aspire dashboard.
+         Aspire AppHost injects OTEL_EXPORTER_OTLP_ENDPOINT automatically.
+         Squad CLI traces can be directed to the same Aspire endpoint:
+           $env:OTEL_EXPORTER_OTLP_ENDPOINT="http://localhost:4317"; squad run "..." -->
+    <PackageReference Include="OpenTelemetry" Version="1.15.3" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.15.3" />
+  </ItemGroup>
+
+</Project>

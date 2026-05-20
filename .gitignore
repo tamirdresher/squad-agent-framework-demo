@@ -1,0 +1,24 @@
+# .NET build outputs
+bin/
+obj/
+
+# User/local IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Logs and test results
+*.log
+TestResults/
+coverage/
+
+# Local config/secrets
+appsettings.Development.json
+
+# Local trace artifacts
+copilot-*.jsonl
+
+# OS files
+Thumbs.db
+.DS_Store
